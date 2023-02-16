@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Music Player</title>
+  </head>
+  <body>
+    <h1>Music Player</h1>
+
+    <div class="music-container">
+        <div class="music-info">
+            <h4 id="title">Sample Song</h4>
+            <div class="progress-container">
+                <div class="progress"></div>
+            </div>
+        </div>
+
+        <audio src="music/talking.mp3" id="audio"></audio>
+
+        <div class="img-container">
+            <img src="./img_me.jpg" alt="sample image" id="cover">
+        </div> 
+
+        <div class="navigation">
+            <button id="prev" class="action-btn"> <img src="./icons/prev-button.png" alt="prev Button"> </button>
+            <button id="play" class="action-btn action-btn-big"> <img src="./icons/play-button.png" alt="playbtn" id="playPause"> </button>
+            <button id="next" class="action-btn"><img src="./icons/next-button.png" alt="next Button"></button>
+            <button class="action-btn shuffle"><img src="./icons/shuffle.png" alt="next Button"></button>
+        </div>
+    </div>
+
+    <script src="./index.js"></script>
+  </body>
+</html>
